@@ -1,0 +1,252 @@
+/* CSS General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(190, 154, 160);
+}
+
+h1,
+h2 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.navegation li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px;
+}
+
+.posicion {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px;
+}
+footer {
+  background-color: orangered;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: orangered;
+  margin-top: 50px;
+}
+
+.logoFooter {
+  width: 80px;
+  height: 80px;
+}
+
+.logoNav {
+  width: 50px;
+  height: 50px;
+}
+
+/* CSS Index */
+
+.imagenInicio {
+  width: 100%;
+  height: 650px;
+}
+
+.parrafoInicio {
+  margin: 20px;
+  text-align: center;
+}
+
+.imagenCompra {
+  margin-top: 30px;
+  margin-left: 450px;
+  height: 120px;
+  width: 35%;
+}
+
+/* CSS Discografia */
+.gridContenedorPrincipal {
+  display: grid;
+  grid-template-areas:
+    "discoUno discoDos discoTres"
+    "discoCuatro discoCinco discoSeis";
+}
+.flexItemDiscografia {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 650px;
+  align-items: center;
+}
+.imagenDisco {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.listaDisc li a {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.discografia {
+  border: 1px solid black;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.discUno {
+  background-color: blue;
+  grid-area: discoUno;
+}
+
+.discDos {
+  background-color: rgb(177, 43, 43);
+  grid-area: discoDos;
+}
+
+.discTres {
+  background-color: rgb(104, 104, 207);
+  grid-area: discoTres;
+}
+.discCuatro {
+  background-color: brown;
+  grid-area: discoCuatro;
+}
+.discCinco {
+  background-color: blueviolet;
+  grid-area: discoCinco;
+}
+.discSeis {
+  background-color: blanchedalmond;
+  grid-area: discoSeis;
+}
+/* CSS Historia */
+
+.fondoHistoria {
+  background-image: url(https://los40ar00.epimg.net/los40/imagenes/2023/03/10/musica/1678460792_503362_1678462747_noticia_normal.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.textoHistoria {
+  color: orangered;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.textTitulo {
+  color: orangered;
+  font-size: 25px;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+/* CSS Multimedia */
+#discografias {
+  text-transform: uppercase;
+}
+.subNavegation {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.subNavegation ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.subNav li a {
+  font-size: 20px;
+  background-color: chocolate;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+/* CSS Contacto */
+
+form {
+  background-color: rgb(202, 202, 5);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+label {
+  display: inline;
+  margin-left: 80px;
+  padding: 20px;
+}
+
+.textForm {
+  color: brown;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  display: block;
+  margin-left: 80px;
+  padding: 10px;
+  width: 90%;
+}
+
+.posicionForm {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.botones {
+  cursor: pointer;
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+
+/* REINICIO DE CSS */
