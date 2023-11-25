@@ -1,11 +1,11 @@
-/* CSS General */
-
+/* RESETEO CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* MOBILE FIRST */
+/* CSS General */
 a {
   color: black;
   cursor: pointer;
@@ -59,8 +59,8 @@ footer ul {
 }
 
 .logoFooter {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .logoNav {
@@ -69,10 +69,9 @@ footer ul {
 }
 
 /* CSS Index */
-
 .imagenInicio {
   width: 100%;
-  height: 650px;
+  height: 350px;
 }
 
 .parrafoInicio {
@@ -80,25 +79,32 @@ footer ul {
   text-align: center;
 }
 
+aside a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .imagenCompra {
-  margin-top: 30px;
-  margin-left: 450px;
-  height: 120px;
-  width: 35%;
+  height: 100px;
+  width: 70vw;
 }
 
 /* CSS Discografia */
-.gridContenedorPrincipal {
+.gridContenedorDiscografia {
   display: grid;
   grid-template-areas:
-    "discoUno discoDos discoTres"
-    "discoCuatro discoCinco discoSeis";
+    "titulo"
+    "discoUno"
+    "discoDos"
+    "discoTres"
+    "discoCuatro"
+    "discoCinco"
+    "discoSeis";
 }
 .flexItemDiscografia {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 750px;
   align-items: center;
 }
 .imagenDisco {
@@ -106,6 +112,11 @@ footer ul {
   height: 200px;
   object-fit: contain;
   margin-bottom: 20px;
+}
+.contenedorImgDiscFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .listaDisc li a {
   display: inline-block;
@@ -120,6 +131,9 @@ footer ul {
   margin: 20px;
   padding: 10px;
   text-align: center;
+}
+.tituloDiscografia {
+  grid-area: titulo;
 }
 
 .discUno {
@@ -249,4 +263,49 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* REINICIO DE CSS */
+/* VISTA TABLETA */
+@media (min-width: 768px) {
+  /* CSS General */
+  .logoFooter {
+    width: 70px;
+    height: 70px;
+  }
+  /* CSS Index */
+  .imagenInicio {
+    height: 450px;
+  }
+  .imagenCompra {
+    height: 120px;
+  }
+  /* CSS Discografia */
+  .gridContenedorDiscografia {
+    grid-template-areas:
+      "titulo titulo"
+      "discoUno discoDos"
+      "discoTres discoCuatro"
+      "discoCinco discoSeis";
+  }
+}
+
+/* VISTA PC */
+@media (min-width: 1024px) {
+  /* CSS General */
+  .logoFooter {
+    width: 80px;
+    height: 80px;
+  }
+  /* CSS Index */
+  .imagenInicio {
+    height: 650px;
+  }
+  .imagenCompra {
+    height: 150px;
+  }
+  /* CSS Discografia */
+  .gridContenedorDiscografia {
+    grid-template-areas:
+      "titulo titulo titulo"
+      "discoUno discoDos discoTres"
+      "discoCuatro discoCinco discoSeis";
+  }
+}
